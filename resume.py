@@ -21,92 +21,90 @@ st.markdown("</div>", unsafe_allow_html=True)
 gradient_background = "background: linear-gradient(135deg, #000000, #2c2c2c, #5c5c5c);"
 
 # Summary section
-summary_box_html = f"""
-<div style='
-    {gradient_background}
-    padding: 20px;
-    border-radius: 12px;
-    color: white;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-    font-size: 16px;
-    line-height: 1.6;
-'>
-    <ul style='padding-left: 20px;'>
-        <li>More than four years of experience in the e-commerce industry, specialising in data analysis, affiliate marketing, and campaign strategy.</li>
-        <li>Skilled in translating insights into action through budget management, performance optimisation, cross-functional campaigns, fraud prevention, and product development.</li>
-        <li>Sole recipient of ByteDance Individual Spot Award in department for outstanding performance. Recognised as a reliable, collaborative, and data-driven team member with a passion for continuous improvement.</li>
-    </ul>
-</div>
-"""
+st.subheader("💡 Summary")
+with st.container():
+    st.markdown(
+        """
+        **•** More than four years of experience in the e-commerce industry, specialising in data analysis, affiliate marketing, and campaign strategy.  
 
-st.markdown("<div style='font-size: 24px; font-weight: bold; margin-bottom: 10px;'>💡Summary</div>", unsafe_allow_html=True)
-st.markdown(summary_box_html, unsafe_allow_html=True)
+        **•** Skilled in translating insights into action through budget management, performance optimisation, cross-functional campaigns, fraud prevention, and product development.  
 
-# Skills section (no box)
-st.markdown("<br>", unsafe_allow_html=True) 
+        **•** Sole recipient of ByteDance Individual Spot Award in department for outstanding performance. Recognised as a reliable, collaborative, and data-driven team member with a passion for continuous improvement.  
+        """
+    )
 
-skills_html = """
-<div style='
-    font-size: 16px;
-    line-height: 1.6;
-'>
-    <ul style='padding-left: 20px;'>
-        <li><strong>Business & Marketing Skills:</strong> Affiliate marketing, campaign management, budgeting & target setting, data analysis & visualisation, stakeholder management, presentation & communication, team collaboration & leadership</li>
-        <li><strong>Technical Skills:</strong> SQL, Python</li>
-    </ul>
-</div>
-"""
 
-st.markdown("<div style='font-size: 24px; font-weight: bold; margin-bottom: 10px;'>🎯 Skills</div>", unsafe_allow_html=True)
-st.markdown(skills_html, unsafe_allow_html=True)
+# Skills section
+st.subheader("🎯 Skills")
+# Business & Marketing Skills
+st.markdown(
+    "**Business & Marketing Skills:** "
+    "Affiliate marketing, campaign management, budgeting & target setting, "
+    "data analysis & visualisation, stakeholder management, "
+    "presentation & communication, team collaboration & leadership"
+)
+
+# Technical Skills
+st.markdown(
+    "**Technical Skills:** "
+    "SQL, Python"
+)
 
 # Work Experience section
 st.markdown("<br>", unsafe_allow_html=True) 
-work_experience_html = """
-<div style='font-size: 16px; line-height: 1.6;'>
-    <div style='margin-bottom: 20px;'>
-        <strong>Shopee – Indonesia</strong><br>
-        <em>Senior Associate - Marketing Growth & Strategy</em> | Nov 2024 – Jan 2025
-        <ul style='padding-left: 20px; margin-top: 5px;'>
-            <li>Acted as campaign lead, managing end-to-end marketing campaigns, including strategy development, budgeting, execution, and performance analysis. Partnered with cross-functional teams to deliver campaign, resulting in an 18% uplift in orders.</li>
-            <li>Teamed up with product team to develop new features, streamlining campaign operations and improving efficiency, resulting in a 39% increase in campaign registrations.</li>
-        </ul>
-    </div>
-    </div>
-        <strong>ByteDance – Indonesia</strong><br>
-        <em>Creator Strategy</em> | Jul 2024 – Nov 2025
-        <ul style='padding-left: 20px; margin-top: 5px;'>
-            <li>Monitored performance and budget tracking for social commerce programs, delivering data-driven insights and strategic recommendations contributing to a 3 percentage point increase in monthly contribution to overall marketplace’s orders.</li>
-            <li>Collaborated with data science and engineering teams to integrate data between Tokopedia and ByteDance, streamlining reporting processes and reducing reliance on manual data requests through a newly developed performance dashboard.</li>
-            <li>Defined key success metrics and collaborated with product and business teams to launch and drive early adoption of link-sharing program, enabling TikTok users to share product links outside the platform.</li>
-        </ul>
-        <em>Affiliate Business Associate (Analysis & Budgeting) - Tokopedia</em> | Dec 2012 – Jul 2024
-        <ul style='padding-left: 20px; margin-top: 5px;'>
-            <li>Led data operations for affiliate program from its public launch, overseeing performance monitoring, establishing reporting standards, and enhancing data accuracy across systems, contributing to annual order growth and a higher share of overall marketplace transactions.</li>
-            <li>Designed monthly and annual performance targets and budgets, achieving approximately 50% cost savings by optimising commission structures in response to business priorities and market dynamics.</li>
-            <li>Identified patterns and prevented fraudulent activities by developing fraud detection rules and mechanisms, resulting in cost savings exceeding IDR 4 billion.</li>
-            <li>Worked on cross-functional initiatives, including product development and campaign optimisation, contributing to a 15%+ increase in seller-funded commissions to improve sustainability of the program.</li>    
-        </ul>
-    </div>
-"""
-st.markdown("<div style='font-size: 24px; font-weight: bold; margin-bottom: 10px;'>💼 Work Experience</div>", unsafe_allow_html=True)
-st.markdown(work_experience_html, unsafe_allow_html=True)
+st.subheader("💼 Work Experiences")
+# Shopee – Indonesia
+st.markdown("**Shopee – Indonesia**")
+st.markdown("_Senior Associate - Marketing Growth & Strategy_ | Nov 2024 – Jan 2025")
+st.write(
+    "- Acted as campaign lead, managing end-to-end marketing campaigns including strategy, budgeting, execution, and performance analysis. Partnered with cross-functional teams to deliver a campaign resulting in an 18% uplift in orders."
+)
+st.write(
+    "- Teamed up with product team to develop new features, streamlining campaign operations and improving efficiency, resulting in a 39% increase in campaign registrations."
+)
+
+# ByteDance – Indonesia
+st.markdown("**ByteDance – Indonesia**")
+st.markdown("_Creator Strategy_ | Jul 2024 – Nov 2025")
+st.write(
+    "- Monitored performance and budget tracking for social commerce programs, delivering data-driven insights and recommendations that contributed to a 3 percentage point increase in monthly contribution to marketplace orders."
+)
+st.write(
+    "- Collaborated with data science and engineering teams to integrate data between Tokopedia and ByteDance, streamlining reporting processes and reducing manual data requests via a new performance dashboard."
+)
+st.write(
+    "- Defined key success metrics and collaborated with product and business teams to launch and drive adoption of a link-sharing program, enabling TikTok users to share product links outside the platform."
+)
+
+# Tokopedia – Affiliate Business Associate
+st.markdown("_Affiliate Business Associate (Analysis & Budgeting) – Tokopedia_ | Dec 2012 – Jul 2024")
+st.write(
+    "- Led data operations for affiliate program from its public launch, overseeing performance monitoring, establishing reporting standards, and enhancing data accuracy, contributing to order growth and higher share of marketplace transactions."
+)
+st.write(
+    "- Designed monthly and annual performance targets and budgets, achieving ~50% cost savings by optimising commission structures based on business priorities and market conditions."
+)
+st.write(
+    "- Identified patterns and prevented fraudulent activities by developing fraud detection rules and mechanisms, saving over IDR 4 billion."
+)
+st.write(
+    "- Worked on cross-functional initiatives including product development and campaign optimisation, contributing to a 15%+ increase in seller-funded commissions to improve program sustainability."
+)
 
 # Education section
 st.markdown("<br>", unsafe_allow_html=True) 
-education_html = """
-<div style ='
-    font-size: 16px;
-    line_height: 1.6;
-'>
-    <ul style='padding-left: 20px;'>
-        <li><strong>MSc in Business Analytics, Nanyang Technological University, Singapore</strong> | Jul, 2025 - Jun, 2026 (expected)</li>
-        <li><strong>Bachelor of Communication, Bakrie University, Indonesia</strong> | Jul, 2016 - Feb, 2020</li>
-    </ul>
-</div>
-"""
-st.markdown("<div style='font-size: 24px; font-weight: bold; margin-bottom: 10px;'>🎓 Education</div>", unsafe_allow_html=True)
-st.markdown(education_html, unsafe_allow_html=True)
+st.subheader("🎓 Education")
+
+st.markdown(
+    "**MSc in Business Analytics, Nanyang Technological University, Singapore**  \n"
+    "_Jul 2025 – Jun 2026 (expected)_"
+)
+
+st.markdown(
+    "**Bachelor of Communication, Bakrie University, Indonesia**  \n"
+    "_Jul 2016 – Feb 2020_"
+)
+
 
 # Create LinkedIn button
 st.markdown("""
