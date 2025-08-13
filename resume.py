@@ -106,15 +106,12 @@ st.markdown(
 )
 
 
-# Create LinkedIn button
-st.markdown("""
-<div style="text-align: center; margin-top: 20px;">
-    <a href="https://www.linkedin.com/in/rifaaisyaputri/" target="_blank" 
-       style="display: inline-block; padding: 12px 25px; background-color: #0077B5; 
-              color: white; border-radius: 30px; text-decoration: none; font-weight: bold;
-              box-shadow: 0px 4px 8px rgba(0,0,0,0.2); transition: all 0.3s ease;">
-        Let's Connect on LinkedIn 👋🏻
-    </a>
-</div>
-""", unsafe_allow_html=True)
+# Create LinkedIn button# Title
 
+# Shifted slightly to the right
+col1, col2, col3 = st.columns([1.5, 2, 0.5])
+with col2:
+    st.link_button(
+        "👋🏻 Connect on LinkedIn",
+        "https://www.linkedin.com/in/rifaaisyaputri/"
+    )
