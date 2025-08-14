@@ -45,7 +45,6 @@ st.markdown(
     "SQL, Python")
 
 # Work Experience section
-st.markdown("<br>", unsafe_allow_html=True) 
 st.subheader("💼 Work Experiences")
 # Shopee – Indonesia
 st.markdown("**Shopee – Indonesia**")
