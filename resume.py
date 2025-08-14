@@ -29,7 +29,7 @@ st.markdown(
 
         **•** Skilled in translating insights into action through budget management, performance optimisation, cross-functional campaigns, fraud prevention, and product development.  
 
-        **•** Sole recipient of ByteDance Individual Spot Award in department for outstanding performance. Recognised as a reliable, collaborative, and data-driven team member with a passion for continuous improvement.  
+        **•** Sole recipient of ByteDance Individual Spot Award in the department for outstanding performance. Recognised as a reliable, collaborative, and data-driven team member with a passion for continuous improvement.  
         """
     )
 
