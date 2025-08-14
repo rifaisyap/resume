@@ -9,21 +9,21 @@ with col1:
     st.image(image, use_container_width=True)
 
 with col2:
-    st.markdown("""
-        <div style='font-size: 32px; font-weight: bold; margin-bottom: 5px;'>Rifa Aisya Putri</div>
-        <p style='margin-top: 0; font-size: 19px;'>Business Analysis | E-commerce | Marketing & Campaign Strategy</p>
-        <p style='color: gray; margin-top: 5px;'>📍 Singapore<br>📧 rifa.putriaisya@gmail.com<br>📞 (65)98677022, (62)81314080415</p>
-    """, unsafe_allow_html=True)
-
-st.markdown("</div>", unsafe_allow_html=True)
-
-# Gradient color style
-gradient_background = "background: linear-gradient(135deg, #000000, #2c2c2c, #5c5c5c);"
+    st.markdown("### **Rifa Aisya Putri**")
+    st.markdown(
+        "Business Analysis | E-commerce | Marketing & Campaign Strategy"
+    )
+    st.markdown(
+        """
+        📍 Singapore  
+        📧 rifa.putriaisya@gmail.com  
+        📞 (65) 9867 7022
+        """
+    )
 
 # Summary section
 st.subheader("💡 Summary")
-with st.container():
-    st.markdown(
+st.markdown(
         """
         **•** More than four years of experience in the e-commerce industry, specialising in data analysis, affiliate marketing, and campaign strategy.  
 
